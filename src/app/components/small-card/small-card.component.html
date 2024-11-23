@@ -1,22 +1,22 @@
 <div class="container__small-card">
 	<div class="small-card__photo">
-		<img
-			src="https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg"
-			alt="image not found"
-			width="100%"
-		/>
+		<img src="{{ cardPhoto }}" alt="image not found" width="100%" />
 	</div>
 	<div class="small-card__info">
 		<div class="small-card__title">
-			<a href="https://angular.dev/overview">What is Angular?</a>
+			<a
+				[routerLink]="['/content', Id]"
+				routerLinkActive="router-link-active"
+				>{{ cardTitle }}</a
+			>
 		</div>
 		<div class="small-card__description">
 			<p>
-				<a href="https://angular.dev/overview">
-					Angular is a web framework that empowers developers to build fast,
-					reliable applications. Maintained by a dedicated team at Google,
-					Angular provides a broad suite of tools, APIs, and libraries to
-					simplify and streamline your development workflow.
+				<a
+					[routerLink]="['/content', Id]"
+					routerLinkActive="router-link-active"
+				>
+					{{ cardDescripton }}
 				</a>
 			</p>
 		</div>
